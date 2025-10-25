@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    color: #6f6f6f;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Roboto", sans-serif;
+}
+
+clear{
+    clear: both;
+}
+
+.fix{
+    overflow: hidden;
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    width: 1200px;
+}
+
+.img{
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+ -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus{
+    text-decoration: none;
+    outline: 0px solid
+}
+
+a:focus, 
+a:hover{
+    color: #303030;
+    text-decoration: none;
+}
+
+a:active,
+a:hover{
+    outline: 0 none
+}
+
+a, button, input{
+    outline: medium none;
+    color: #606060;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+button{
+    border: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    color: inherit;
+}
+
+label{
+    font-weight: 400;
+    font-size: 15px;
+    color: #606060;
+}
+
+*::-moz-selection{
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection{
+    color: #fff;
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection{
+    background: #b3d4fc;
+    color: #fff;
+    text-shadow: none;
+}
+
+-browserupgrade{
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em ;
+}
+
+.mark, mark{
+    background: #4fc1f0 none repeat scroll 0 0;
+    color: #fff;
+    font-weight: 600;
+}
+
+.f-left{
+    float: left;
+}
+
+.f-right{
+    float: right;
+}
+
+p{
+    line-height: 24px;
+    font-size: 14px;
+}
+
+ul{
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-input-placeholder{
+    color: #969696;
+}
+
+:-moz-placeholder{
+    color: #969696;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+
+:-ms-input-placeholder{
+    color: #969696;
+}
+
+:-moz-placeholder{
+    color: #969696;
+}
+
+.default-btn{
+    background: #614a3d none repeat scroll 0 0;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 0 35px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.default-btn:before{
+    background-color: rgba(0, 0, 0, 1);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    transform: scale(0.5, 1);
+    transition: all 0.4s ease 0s;
+    width: 100%;
+    z-index: 1;
+}
+
+.default-btn span{
+    z-index: 2;
+    position: relative;
+}
+
+.default-btn:hover span, .default-btn:focus span, .default-btn:active span{
+    color: #fff;
+}
+
+.default-btn:hover:before, .default-btn:focus:before, .default-btn:active:before{
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+input, select,
+textarea{
+    -webkit-transition: all 0.5s ease-out 0s;
+    transition: all 0.5s ease-out 0s;
+}
+
+/* text color*/
+.text-white{
+    color: #ffffff;
+}
+
+/*inputs*/
+input, textarea{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    border: 1px solid #f1f1f1;
+    box-shadow: none;
+    color: #969696;
+    font-size: 42px;
+    padding-left: 14px;
+    width: 100%;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder{
+    color: #969696;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+    color: #969696;
+}
+
+select{
+    width: 100%;
+    background: #eceff8;
+    border: 2px solid #eceff8;
+    height: 45px;
+    padding-left: 10px;
+    box-shadow: none;
+    font-size: 14px;
+    color: #626262;
+}
+
+option{
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus{
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0 ;
+    border-color: #f1f1f1;
+}
+
+textarea{
+    height: 100px;
+    padding: 12px 17px;
+    resize: vertical;
+    width: 100%;
+}
+
+#scrollUp{
+    background: #000000 none repeat scroll 0 0;
+    bottom: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 30px;
+    height: 40px;
+    position: fixed;
+    right: 25px;
+    text-align: center;
+    transition: all 0.9s ease 0s;
+    width: 38px;
+    z-index: 9999;
+}
+
+#scrollUp:hover{
+    background: #614a3d;
+}

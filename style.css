@@ -18,10 +18,11 @@
     padding-right: 10px;
 }
 
-.single-contact::after{
+.single-contact:after{
     background: #614a3d none repeat scroll 0 0;
     border-color: #614a3d;
     box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+    content: "";
     height: 90px;
     left: 0;
     opacity: 0;
@@ -48,7 +49,7 @@
 }
 
 .single-contact:hover .information h4, .single-contact .information h4 span{
-    color: #ffffff;
+    color: #000000;
     top: 3px;
 }
 
