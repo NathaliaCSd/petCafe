@@ -1,13 +1,16 @@
-.slider-area{
+/* ===== Slider base ===== */
+.slider-area {
     position: relative;
     overflow: hidden;
 }
 
-.slider-area img{
+.slider-area img {
     width: 100%;
 }
 
-.slider-area, 
+
+/* altura só nos elementos do carrossel (sem afetar .container/.row) */
+.slider-area,
 .banner-content,
 .single-slide,
 .owl-item,
@@ -20,31 +23,33 @@
 .banner-content .col-lg-8,
 .banner-content .text-content-wrapper,
 .banner-content .text-content,
-.banner-content .display-table, 
-.banner-content .display-table-cell{
+.banner-content .display-table,
+.banner-content .display-table-cell,
+.slider-area .slider-wrapper,
+.slider-area .owl-stage-outer,
+.slider-area .owl-stage,
+.slider-area .owl-item,
+.slider-area .single-slide {
     height: 100%;
 }
 
-.text-content-wrapper, .slider-area img{
-    width: 100%;
-}
-
-.banner-content .text-content-wrapper{
+/* ===== Conteúdo do banner ===== */
+.banner-content .text-content-wrapper {
     display: table;
 }
 
-.banner-content .text-content{
+.banner-content .text-content {
     display: table-cell;
     vertical-align: middle;
 }
 
-.banner-btn{
+.banner-btn {
     clear: both;
     display: block;
 }
 
-.banner-btn a{
-    background: #fff none repeat scroll 0 0;
+.banner-btn a {
+    background: #fff;
     color: #614a3d;
     display: inline-block;
     font-size: 16px;
@@ -53,48 +58,35 @@
     padding: 0 27px;
     position: relative;
     text-transform: uppercase;
-    -webkit-transition: all 0.5s ease 0s;
-    transition: all 0.5s ease 0s;
+    transition: all .5s ease;
 }
 
-.banner-btn a:before{
-    background-color: rgba(97, 74, 61, 1);
+.banner-btn a::before {
     content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpfa(Opacity=0)";
     position: absolute;
-    top: 0;
-    -webkit-transform: scale(0.5,1);
-    transform: scale(0.5, 1);
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    width: 100%;
+    inset: 0;
     z-index: 1;
+    background: rgba(97, 74, 61, 1);
+    opacity: 0;
+    transform: scale(.5, 1);
+    transition: all .4s ease;
 }
 
-.banner-btn a span{
-    z-index: 2;
+.banner-btn a span {
     position: relative;
+    z-index: 2;
 }
 
-.banner-btn a:hover span, .banner-btn a:focus span, .banner-btn a:active span{
+.banner-btn a:hover span {
     color: #fff;
 }
 
-.banner-btn a:hover:before, .banner-btn a:focus:before, .banner-btn a:active:before{
+.banner-btn a:hover::before {
     opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpfa(Opacity=100)";
-    -webkit-transform: scale(1,1);
-    transform: scale(1,1);
+    transform: scale(1, 1);
 }
 
-.slider-area .button-default{
-    display: inline;
-}
-
-.banner-content h3{
+.banner-content h3 {
     color: #fff;
     font-family: "Courgette", cursive;
     font-size: 40px;
@@ -102,84 +94,111 @@
     text-transform: capitalize;
 }
 
-.banner-content h1{
-    color: #000000;
+.banner-content h1 {
+    color: #000;
     font-size: 60px;
     margin-bottom: 36px;
 }
 
-.banner-content p{
+.banner-content p {
     color: #614a3d;
     font-size: 16px;
     margin-bottom: 45px;
     padding: 0 54px;
 }
 
-.slider-area .owl-item:active .banner-content h3,
-.slider-area .owl-item:active .banner-content h1,
-.slider-area .owl-item:active .banner-content p,
-.slider-area .owl-item.active .banner-content .banner-btn{
-    -webkit-animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
-    animation: 1000ms ease-in-out 0s normal both 1 running fadeInUp;
+/* animações apenas no slide ativo */
+.slider-area .owl-item.active .banner-content h3,
+.slider-area .owl-item.active .banner-content h1,
+.slider-area .owl-item.active .banner-content p,
+.slider-area .owl-item.active .banner-content .banner-btn {
+    animation: fadeInUp 1s ease-in-out both;
 }
 
-.slider-area .owl-item.active .banner-content h3{
-    -webkit-animation-delay: 600ms;
-    animation-delay: 600;
+.slider-area .owl-item.active .banner-content h3 {
+    animation-delay: 600ms;
 }
 
-.slider-area .owl-item.active .banner-content h1{
-    -webkit-animation-delay: 1100ms;
+.slider-area .owl-item.active .banner-content h1 {
     animation-delay: 1100ms;
 }
 
-.slider-area .owl-item.active .banner-content p{
-    -webkit-animation-delay: 1600ms;
+.slider-area .owl-item.active .banner-content p {
     animation-delay: 1600ms;
 }
 
-.slider-area .owl-item.owl-item.active .banner-content .banner-btn{
-    -webkit-animation-delay: 2100ms;
+.slider-area .owl-item.active .banner-content .banner-btn {
     animation-delay: 2100ms;
 }
 
-.owl-nav div{
-    background: #fff none repeat scroll 0 0;
-    color: #614a3d;
-    font-size: 30px;
-    height: 40px;
-    left: -46px;
-    line-height: 40px;
-    margin-top: -20px;
+/* ===== Navegação do Owl (escopo do slider do topo) ===== */
+.slider-area .owl-nav {
     position: absolute;
-    text-align: center;
-    top: 50%;
-    -webkit-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    width: 40px;
-    z-index: 999;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    pointer-events: none;
 }
 
-.owl-nav .owl-next{
-    left: auto;
-    right: -46px;
+.slider-area .owl-nav button {
+    pointer-events: auto;
+    /* ativa clique */
+    appearance: none;
+    -webkit-appearance: none;
+    border: 0; 
+    background: rgba(0, 0, 0, 0.80);
+    /* contraste sobre a imagem */
+    color: black;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+    transition: transform .18s ease, background .18s ease, color .18s ease;
+    cursor: pointer;
 }
 
-.slider-area:hover .owl-nav div{
-    left: 0;
+.slider-area .owl-nav .owl-prev {
+    left: 20px;
 }
 
-.slider-area:hover .owl-nav .owl-next{
-    left: auto;
-    right: 0;
+.slider-area .owl-nav .owl-next {
+    right: 20px;
 }
 
-.owl-nav div:hover{
+.slider-area .owl-nav button:hover {
     background: #614a3d;
     color: #fff;
 }
 
-.single-slide{
+.owl-nav div {
+    background: white;
+    color: #000;
+    font-size: 20px;
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    left: 12px;
+    /* posição padrão à esquerda */
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: all .25s ease;
+}
+
+/* ===== Slide bg ===== */
+.single-slide {
+    position: relative;
     background-position: top center;
     background-size: cover;
+    background-repeat: no-repeat;
 }
