@@ -1,19 +1,30 @@
 <!doctype html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CatCafe</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="./css/shortcode/shortcode.css" />
 
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/shortcode/shortcode.css" />
+
+    <!-- Owl Carousel CSS (corrigido: era .js) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- Font Awesome (corrigido para versão válida) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ZMDI (correto para classes .zmdi) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <!-- REMOVIDO: modernizr como CSS (estava incorreto) -->
 </head>
 
 <body>
@@ -45,7 +56,7 @@
                             <div class="search btn">
                                 <ul data-toggle="dropdown" class="header-search search-toggle">
                                     <li class="search-menu">
-                                        <i class="zmdi amdi-search"></i>
+                                        <i class="zmdi zmdi-search"></i>
                                     </li>
                                 </ul>
                                 <div class="search">
@@ -69,7 +80,7 @@
 
     <section class="slider-area">
         <div class="slider-wrapper">
-            <div class="single-slide">
+            <div class="single-slide" style="background-image: url('img/4.png');">
                 <div class="banner-content">
                     <div class="container">
                         <div class="row">
@@ -91,7 +102,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-slide">
+            <div class="single-slide" style="background-image: url('img/4.png');">
                 <div class="banner-content">
                     <div class="container">
                         <div class="row">
@@ -163,7 +174,7 @@
                 </div>
                 <div class="col-md-6 col-sm-6 hidden-xs">
                     <div class="about-image">
-                        <img src="" alt="">
+                        <img src="img/1.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -187,27 +198,27 @@
                 <form action="#">
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Nome" , name="nome">
+                            <input type="text" placeholder="Nome" name="nome">
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="tel" placeholder="Telefone" , name="Telefone">
+                            <input type="tel" placeholder="Telefone" name="Telefone">
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="email" placeholder="Email" , name="Email">
+                            <input type="email" placeholder="Email" name="Email">
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Endereço" , name="endereco">
+                            <input type="text" placeholder="Endereço" name="endereco">
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="date" placeholder="Data de entrega" , name="data">
+                            <input type="date" placeholder="Data de entrega" name="data">
                         </div>
 
                         <div class="col-md-6 col-sm-6">
-                            <input type="time" placeholder="Horario" , name="horas">
+                            <input type="time" placeholder="Horario" name="horas">
                         </div>
                     </div>
 
@@ -301,7 +312,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/2.jpeg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -309,7 +320,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/3.jpeg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -317,7 +328,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/3.jpg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -325,7 +336,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/4.png" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -333,7 +344,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/5.jpg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -341,7 +352,7 @@
                             <div class="col-md-4 col-sm-4">
                                 <a href="#" class="single-client">
                                     <span class="client-table-cell">
-                                        <img src="" alt="">
+                                        <img src="img/1.jpg" alt="">
                                     </span>
                                 </a>
                             </div>
@@ -368,9 +379,9 @@
                     <div class="col-lg-3 col-md-4 hidden-sm col-xs-12">
                         <div class="single-footer-widget">
                             <h3>Contato</h3>
-                            <span class="c-info" class="zmdi zmdi-email"> <i> loja@email.com</i></span>
-                            <span class="c-info" class="zmdi zmdi-phone"> <i> (00) 0000-0000</i></span>
-                            <span class="c-info" class="zmdi zmdi-home"> <i> av.brasil, 1000</i></span>
+                            <span class="c-info zmdi zmdi-email"> <i> loja@email.com</i></span>
+                            <span class="c-info zmdi zmdi-phone"> <i> (00) 0000-0000</i></span>
+                            <span class="c-info zmdi zmdi-home"> <i> av.brasil, 1000</i></span>
 
                         </div>
                     </div>
@@ -424,5 +435,17 @@
         </div>
     </section>
 </body>
+   <!-- jQuery  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap 5 bundle (move do <head> para cá) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+    <!-- Owl Carousel JS (local, já existente) -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- Seu JS -->
+    <script src="./js/main.js"></script>
 
 </html>
