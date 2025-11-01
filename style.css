@@ -355,3 +355,87 @@
 }
 
 
+/*menu area*/
+.menu-area .section-title{
+    margin-bottom: 79px;
+}
+
+.menu-image{
+    margin-bottom: 17px;
+    position: relative;
+}
+
+.menu-image img{
+    max-width: 100%;
+}
+
+.menu-image > a {
+    border: 1px solid #f1f1f1;
+    display: block;
+    position: relative;
+}
+
+.menu-image > span{
+    background: #ffffff none repeat scroll 0 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    color: #614a3d;
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    height: 48px;
+    left: 0;
+    line-height: 47px;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: -23px;
+    width: 130px0;
+    z-index: 2;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; 
+} 
+
+.single-menu > h4{ 
+    color: #5e5e5e;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.single-menu > span{
+    display: block;
+}
+
+.single-menu h4:hover a{
+    color: #614a3d;
+}
+
+.single-menu:hover .menu-image span{
+    background: #614a3d none repeat scroll 0 0;
+    color: #ffffff;
+}
+
+.col-md-3:nth-child(1) .single-menu,
+.col-md-3:nth-child(2) .single-menu,
+.col-md-3:nth-child(3) .single-menu,
+.col-md-3:nth-child(4) .single-menu{
+    margin-bottom: 63px;
+}
+
+.menu-area .default-btn{
+    line-height: 42px;
+    margin-top: 59px;
+    padding: 0 37px;
+}
+
+.menu-btn, .event-btn{
+    line-height: 0;
+    overflow: hidden;
+}
+
+.menu-section .col-md-3:nth-child(5) .single-menu,
+.menu-section .col-md-3:nth-child(6) .single-menu,
+.menu-section .col-md-3:nth-child(7) .single-menu,
+.menu-section .col-md-3:nth-child(80) .single-menu{
+    margin-bottom: 63px;
+}
