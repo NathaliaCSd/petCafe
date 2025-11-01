@@ -1,3 +1,7 @@
+html, body{
+    overflow-x: hidden;
+}
+
 /* contact info*/
 .single-contact{
     float: left;
@@ -438,4 +442,107 @@
 .menu-section .col-md-3:nth-child(7) .single-menu,
 .menu-section .col-md-3:nth-child(80) .single-menu{
     margin-bottom: 63px;
+}
+
+/*contact page*/
+
+#contact-form{
+    text-align: center;
+}
+
+#contact-form input, #contact-form textarea{
+    border-color: #dddddd;
+    margin-bottom: 20px;
+}
+
+#contact-form textarea{
+    background: #f1f1f1 none repeat scroll 0 0;
+    height: 100px;
+}
+
+#contact-form .default-btn{
+    margin-top: 20px;
+    padding: 0 95px;
+}
+
+.contact-info-map-area{
+    position: relative;
+}
+
+.contact-information-container{
+    background: #eeeeee none repeat scroll 0 0;
+    display: block;
+    margin: 60px 0;
+    padding: 94px 0 70px;
+    position: absolute;
+    right: 14%;
+    top: 0;
+    width: 370px;
+}
+
+.info-icon{
+    color: #614a3d;
+    display: block;
+    float: left;
+    font-size: 30px;
+    padding-top: 5px;
+    width: 50px;
+}
+
+.info-text{
+    display: block;
+    float: left;
+    line-height: 22px;
+}
+
+.single-information{
+    margin-bottom: 36px;
+    overflow: hidden;
+    padding: 0 85px;
+}
+
+.contact-links > h3{
+    color: #5e5e5e;
+    margin-bottom: 16px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.social-links a i{
+    border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    height: 26px;
+    line-height: 26px;
+    margin: 0 6px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 26px;
+}
+
+.social-links .zmdi-facebook{
+    background: #3b5998 none repeat scroll 0 0;
+}
+
+.social-links .zmdi-twitter{
+    background: #3b5998 none repeat scroll 0 0;
+}
+
+.social-links .zmdi-instagram{
+    background: #3b5998 none repeat scroll 0 0;
+}
+
+.social-links{
+    text-align: center;
+}
+
+.social-links a i:hover{
+    background: #000000 none repeat scroll 0 0;
+}
+
+#contact-form .default-btn{
+    margin-top: 20px;
+    padding: 0 95px;
 }

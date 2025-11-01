@@ -27,7 +27,9 @@ body{
 }
 
 .container{
-    width: 1200px;
+    max-width: 1200px;  
+    width: 100%;
+    margin: 0 auto;
 }
 
 img{
@@ -639,25 +641,25 @@ textarea{
 }
 
 .bg-1{
-    background-image: url('img/1.jpg');
+    background-image: url('../../img/4.png');
 }
 
 .bg-2{
-    background-image: url('img/1.jpg');
+    background-image: url('../../img/4.png');
 }
 
 .bg-3{
-    background-image: url('img/1.jpg');
+    background-image: url('../../img/4.png');
     background-position: 55% bottom;
 }
 
 .bg-4{
-    background-image: url('img/1.jpg');
+    background-image: url('../../img/4.png');
     background-position: 51% bottom;
 }
 
 .bg-5{
-    background-image: url('img/1.jpg');
+    background-image: url('../../img/4.png');
     background-position: right top;
 }
 
