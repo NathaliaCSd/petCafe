@@ -463,5 +463,134 @@
         margin-bottom: 30px;
     }
 
+    .col-md-3:last-child .single-fun-factor{
+        margin: 0;
+    }
 
+    .abt-image > img{
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .about-section-area{
+        padding-bottom: 50px;
+    }
+
+    .blog-details-area img{
+        max-width: 100%;
+    }
+
+    .content-image, .content-text{
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .content-image > img{
+        width: 100%;
+    }
+
+    .widget{
+        padding-top: 40px;
+    }
+
+    .new-comment-post{
+        margin-top: 10px;
+        padding-right: 0;
+    }
+
+    .content-list span i{
+        left: 0;
+        position: absolute;
+        top: 0;
+    }
+
+    .content-list > span{
+        padding-left: 20px;
+        position: relative;
+    }
+
+    .blog-details-area .social-links{
+        text-align: left;
+    }
+
+    .comments {
+        padding-top: 40px;
+    }
+
+    .comments > h4, .new-comment-post h4{
+        margin-bottom: 35px;
+    }
+
+    .author-image{
+        width: 50px;
+    }
+
+    .comment-text{
+        padding-left: 9px;
+    }
+
+    .reply-comment{
+        padding-left: 0;
+    }
+
+    .single-widget:last-child{
+        margin: 0;
+    }
+
+    .hover-text > h1{
+        font-size: 31px;
+    }
+
+    .about-text > h3{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .header-sticky.sticky{
+        position: inherit;
+    }
+}
+
+/*Large mobile : 480px*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .container{
+        width: 450px;
+    }
+
+    .item-content:hover .hover-text > h1{
+        top: 48%;
+    }
+    
+    .hover-text > p{
+        display: none;
+    }
+
+    .hover-text .price{
+        bottom: 37%;
+    }
+
+    .item-content img, .single-team img{
+        width: 100%;
+    }
+
+    .banner-content h1{
+        font-size: 34px;
+    }
+
+    .banner-content h3{
+        padding-top: 72px;
+    }
+
+    .image-wrapper > img{
+        width: 100%;
+    }
+
+    .gallery > a{
+        margin-right: 10px;
+    }
+
+    .gallery > a:last-child{
+        display: none;
+    }
 }
