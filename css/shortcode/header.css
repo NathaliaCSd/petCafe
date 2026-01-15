@@ -1,9 +1,9 @@
 .logo {
-    height: 50px;
+    height: 30px;
 }
 
 .logo img {
-    transition: all 0.5s ease 0s;
+    transition: none 0.5s step-end 0s;
     height: 50px;
     width: auto;
     object-fit: contain;
@@ -36,7 +36,7 @@
 }
 
 .main-menu ul li a {
-    color: #000000;
+    color: #d28913;
     display: inline-block;
     font-size: 16px;
     font-weight: 500;
@@ -83,7 +83,7 @@
 }
 
 .main-menu ul li ul li a {
-    color: #252525;
+    color: #e69107;
     display: block;
     font-size: 14px;
     line-height: 26px;

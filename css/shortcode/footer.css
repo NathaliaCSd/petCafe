@@ -2,6 +2,11 @@
     padding-left: 48px;
 }
 
+.footer-area{
+    background: #9FB982 none repeat scroll 0 0;
+    padding: 80px 0 30px;
+}
+
 .single-footer-widget > h3{
     color: #000000;
     font-size: 20px;
@@ -12,11 +17,11 @@
 }
 
 .single-footer-widget > p{
-    color: #614a3d;
+    color: #9FB982;
 }
 
 .c-info{
-    color: #614a3d;
+    color: #9FB982;
     display: block;
     line-height: 24px;
     margin-bottom: 10px;
@@ -60,7 +65,7 @@
 
 #mc-form .default-btn{
     background: #fff none repeat scroll 0 0;
-    color: #614a3d;
+    color: #9FB982;
     font-size: 14px;
     height: 38px;
     line-height: 36px;
@@ -68,7 +73,7 @@
 }
 
 #mc-form .default-btn:before{
-    background: #614a3d none repeat scroll 0 0;
+    background: #9FB982 none repeat scroll 0 0;
 }
 
 .footer-links > a{
@@ -84,7 +89,7 @@
 
 .footer-links > a:hover{
     background: #fff none repeat scroll 0 0;
-    color: #614a3d;
+    color: #9FB982;
 }
 
 .footer-links > a:first-child{

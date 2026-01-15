@@ -6,7 +6,7 @@ html, body{
 }
 
 body{
-    color: #6f6f6f;
+    color: #1F2F3A;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -156,7 +156,7 @@ ul{
 }
 
 .default-btn{
-    background: #614a3d none repeat scroll 0 0;
+    background: #9FB982 none repeat scroll 0 0;
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -627,7 +627,7 @@ textarea{
 
 .bg-white{background: #fff;}
 .bg-light{background: #f1f1f1;}
-.bg-koffee{background: #614a3d;}
+.bg-koffee{background: #9FB982;}
 .transparent-bg{background:transparent;}
 .bg-1,.bg-2,.bg-3,.bg-4,.bg-5{
     background-attachment:scroll ;

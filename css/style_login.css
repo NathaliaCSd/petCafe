@@ -1,0 +1,107 @@
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    color: #9FB982;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: "Roboto", sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.fix{
+    overflow: hidden;
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    max-width: 1200px;  
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*booking area*/
+.booking-form input{
+    margin-bottom: 20px;
+}
+
+.booking-form input:focus{
+    color: #9FB982;
+    border-color: #9FB982;
+}
+
+.booking-form input:focus:-ms-input-placeholder{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #9FB982
+}
+
+.booking-form input:focus:-moz-placeholder{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #9FB982
+}
+
+.booking-form input:focus:-webkit-input-placeholder{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    color: #9FB982
+}
+
+.booking-form .default-btn{
+    margin-top: 20px;
+    padding: 0 98px;
+}
+
+.active.day{
+    background: #9FB982 none repeat scroll 0 0;
+    color:#ffffff;
+}
+
+.day{
+    cursor: pointer;
+    text-align: center;
+}
+
+.datepicker thead tr:nth-child(2){
+    background: #9FB982 none repeat scroll 0 0;
+    color: #ffffff;
+    text-align: center;
+}
+
+.datepicker-switch{
+    text-align: center;
+}
+
+.datepicker{
+    padding: 0;
+}
+
+.date-wrapper .datepicker{
+    padding: 0 17px;
+}
+
+.datepicker .prev, .datepicker .next{
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0 8px;
+}
+
+.section-title{
+    margin-bottom: 79px;
+}
+
+.default-btn{
+    line-height: 42px;
+    margin-top: 59px;
+    padding: 0 37px;
+}
