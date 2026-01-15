@@ -96,43 +96,34 @@
                 </div>
             </div>
         </div>
+
         <div class="container">
-            <div class="booking-form">
-                <form action="#">
-                    <div class="row">
-                        <div class="col-md-12 col-sm-12">
-                            <input type="text" placeholder="Nome" name="Nome">
-                        </div>
-                        <div class="col-md-12 col-sm-6">
-                            <input type="email" placeholder="Email" name="Email">
-                        </div>
-                        <div class="col-md-12 col-sm-6">
-                            <input type="password" placeholder="Senha" name="Senha">
-                        </div>
-
-
-                        <!--
-                        
-                        <div class="col-md-6 col-sm-6">
-                            <input type="text" placeholder="Endereço" name="endereco">
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <input type="date" placeholder="Data de entrega" name="data">
-                        </div>
-
-                        <div class="col-md-6 col-sm-6">
-                            <input type="time" placeholder="Horario" name="horas">
-                        </div>
+            <form id="registerForm">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <input id="nome" type="text" placeholder="Nome" name="nome" required>
                     </div>
--->
-                        <div class="col-md-12 text-center fix">
-                            <button class="default-btn" type="submit">
-                                <span>Finalizar cadastro</span>
-                            </button>
-                        </div>
-                </form>
-            </div>
+
+                    <div class="col-md-12 col-sm-6">
+                        <input id="email" type="email" placeholder="Email" name="email" required>
+                    </div>
+
+                    <div class="col-md-12 col-sm-6">
+                        <input id="senha" type="password" placeholder="Senha" name="senha" required>
+                    </div>
+
+                    <div class="col-md-12 text-center fix">
+                        <button class="default-btn" type="submit">
+                            <span>Finalizar cadastro</span>
+                        </button>
+                    </div>
+
+                    <div class="col-md-12 text-center" style="margin-top:12px;">
+                        <p id="msg" style="margin:0;"></p>
+                    </div>
+                </div>
+            </form>
+
         </div>
     </section>
 
@@ -162,7 +153,12 @@
     crossorigin="anonymous"></script>
 <!--owl carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<!-- Seu JS -->
+
+<!--  JS -->
 <script src="./js/main.js"></script>
+<script src="./js/config.js"></script>
+<script src="./js/user.js"></script>
+
+
 
 </html>
