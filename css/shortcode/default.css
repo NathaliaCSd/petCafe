@@ -641,25 +641,25 @@ textarea{
 }
 
 .bg-1{
-    background-image: url('../../img/4.png');
+    background-image: url('../../img/capa_padrao.jpg');
 }
 
 .bg-2{
-    background-image: url('../../img/4.png');
+    background-image: url('../../img/capa_padrao.jpg');
 }
 
 .bg-3{
-    background-image: url('../../img/4.png');
+    background-image: url('../../img/capa_padrao.jpg');
     background-position: 55% bottom;
 }
 
 .bg-4{
-    background-image: url('../../img/4.png');
+    background-image: url('../../img/capa_padrao.jpg');
     background-position: 51% bottom;
 }
 
 .bg-5{
-    background-image: url('../../img/4.png');
+    background-image: url('../../img/capa_padrao.jpg');
     background-position: right top;
 }
 

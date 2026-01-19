@@ -9,21 +9,14 @@ function setMsg(text, ok = false) {
 }
 
 async function registerMerchant({ name, email, password }) {
-  const res = await fetch(
-    `${window.API.base}${window.API.endpoints.registerMerchant}`,
-    {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, password }),
-    }
-  );
+  const res = await fetch(`${window.API.base}${window.API.endpoints.registerMerchant}`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ name, email, password }),
+  });
 
   const data = await res.json().catch(() => null);
-
-  if (!res.ok) {
-    throw new Error(data?.detail || data?.message || `Erro (${res.status})`);
-  }
-
+  if (!res.ok) throw new Error(data?.detail || data?.message || `Erro (${res.status})`);
   return data;
 }
 
